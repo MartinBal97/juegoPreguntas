@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    background-image: linear-gradient(-25deg, #f2f2f2 50%, #5b4a9a 50%);
+    display: flex;
+    align-items: center;
+}
+
+.contenedor {
+    background-color: #fff;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/************************************************/
+/* From uiverse.io by @adamgiebl */
+.boton-empezar {
+    transform: rotate(-25deg) skew(25deg);
+    transform-style: preserve-3d;
+    position: relative;
+    list-style: none;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    margin: 5rem;
+   }
+   
+   .boton-empezar:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    width: 100%;
+    height: 10px;
+    background: #2a2a2a;
+    transform: skewX(-41deg);
+   }
+   
+   .boton-empezar:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -9px;
+    width: 9px;
+    height: 100%;
+    background: #2a2a2a;
+    transform: skewY(-49deg);
+   }
+   
+   .boton-empezar span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.8s ease-out;
+   }
+   
+   .boton-empezar:hover span {
+    z-index: 1000;
+    transition: .3s;
+    color: #fff;
+    background-color: #5b4a9a;
+   }
+ 
+   .boton-empezar:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
+    opacity: 1;
+   }
+   
+   .boton-empezar:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
+    opacity: .8;
+   }
+   
+   .boton-empezar:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
+    opacity: .6;
+   }
+   
+   .boton-empezar:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
+    opacity: .4;
+   }
+   
+   .boton-empezar:hover span:nth-child(1) {
+    transform: translate(0px, 0px);
+    opacity: .2;
+   }
+   
+   .boton-empezar:active span:nth-child(5) {
+    transform: translate(20px, -20px);
+    opacity: 1;
+   }
+   
+   .boton-empezar:active span:nth-child(4) {
+    transform: translate(15px, -15px);
+   }
+   
+   .boton-empezar:active span:nth-child(3) {
+    transform: translate(10px, -10px);
+   }
+   
+   .boton-empezar:active span:nth-child(2) {
+    transform: translate(5px, -5px);
+   }
+   
+   .boton-empezar:active span:nth-child(1) {
+    transform: translate(0px, 0px);
+   }
+   
+   .boton-empezar:nth-child(1):hover span {
+    background: #5b4a9a;
+   }
+
+/*************************************************/
+
+.contenedor-texto .titulo {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+}
+
+
+.contenedor-texto p {
+    margin-bottom: 1.5rem;
+    line-height: 36px;
+}
+
+.btn-link {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 100px;
+    margin: 10px;
+    text-decoration: none;
+    background: #f2f2f2;
+    transition: ease 0.2s;
+}
+
+.btn-link:hover,
+.btn-link.activo {
+    color: #fff;
+    background: #5b4a9a;
+}
+
+@media screen and (max-width: 915px) {
+    main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    
+}
