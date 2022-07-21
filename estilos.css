@@ -32,11 +32,13 @@ body {
 
 
 
-main {
+.contenedor-texto {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 /************************************************/
 /* From uiverse.io by @adamgiebl */
 .boton-empezar {
@@ -50,9 +52,9 @@ main {
     background: transparent;
     font-family: inherit;
     margin: 5rem;
-   }
-   
-   .boton-empezar:before {
+}
+
+.boton-empezar:before {
     content: '';
     position: absolute;
     bottom: -10px;
@@ -61,9 +63,9 @@ main {
     height: 10px;
     background: #2a2a2a;
     transform: skewX(-41deg);
-   }
-   
-   .boton-empezar:after {
+}
+
+.boton-empezar:after {
     content: '';
     position: absolute;
     top: 5px;
@@ -72,9 +74,9 @@ main {
     height: 100%;
     background: #2a2a2a;
     transform: skewY(-49deg);
-   }
-   
-   .boton-empezar span {
+}
+
+.boton-empezar span {
     position: absolute;
     top: 0;
     left: 0;
@@ -85,64 +87,64 @@ main {
     font-size: 25px;
     cursor: pointer;
     transition: 0.8s ease-out;
-   }
-   
-   .boton-empezar:hover span {
+}
+
+.boton-empezar:hover span {
     z-index: 1000;
     transition: .3s;
     color: #fff;
     background-color: #5b4a9a;
-   }
- 
-   .boton-empezar:hover span:nth-child(5) {
+}
+
+.boton-empezar:hover span:nth-child(5) {
     transform: translate(40px, -40px);
     opacity: 1;
-   }
-   
-   .boton-empezar:hover span:nth-child(4) {
+}
+
+.boton-empezar:hover span:nth-child(4) {
     transform: translate(30px, -30px);
     opacity: .8;
-   }
-   
-   .boton-empezar:hover span:nth-child(3) {
+}
+
+.boton-empezar:hover span:nth-child(3) {
     transform: translate(20px, -20px);
     opacity: .6;
-   }
-   
-   .boton-empezar:hover span:nth-child(2) {
+}
+
+.boton-empezar:hover span:nth-child(2) {
     transform: translate(10px, -10px);
     opacity: .4;
-   }
-   
-   .boton-empezar:hover span:nth-child(1) {
+}
+
+.boton-empezar:hover span:nth-child(1) {
     transform: translate(0px, 0px);
     opacity: .2;
-   }
-   
-   .boton-empezar:active span:nth-child(5) {
+}
+
+.boton-empezar:active span:nth-child(5) {
     transform: translate(20px, -20px);
     opacity: 1;
-   }
-   
-   .boton-empezar:active span:nth-child(4) {
+}
+
+.boton-empezar:active span:nth-child(4) {
     transform: translate(15px, -15px);
-   }
-   
-   .boton-empezar:active span:nth-child(3) {
+}
+
+.boton-empezar:active span:nth-child(3) {
     transform: translate(10px, -10px);
-   }
-   
-   .boton-empezar:active span:nth-child(2) {
+}
+
+.boton-empezar:active span:nth-child(2) {
     transform: translate(5px, -5px);
-   }
-   
-   .boton-empezar:active span:nth-child(1) {
+}
+
+.boton-empezar:active span:nth-child(1) {
     transform: translate(0px, 0px);
-   }
-   
-   .boton-empezar:nth-child(1):hover span {
+}
+
+.boton-empezar:nth-child(1):hover span {
     background: #5b4a9a;
-   }
+}
 
 /*************************************************/
 
@@ -152,14 +154,60 @@ main {
     margin-bottom: 1.5rem;
 }
 
-
 .contenedor-texto p {
     margin-bottom: 1.5rem;
     line-height: 36px;
 }
 
+.contenedor-inputs {
+    display: flex;
+    flex-direction: column;
+    
+}
+/*
+let myArray = ['1','2','3']
+    let i,j,k;
+    for (i = myArray.length; i; i--) {
+        j = Math.floor(Math.random() * i);
+        k = myArray[i - 1];
+        myArray[i - 1] = myArray[j];
+        myArray[j] = k;
+
+        function numeroAleatorio() {
+    const min = 1
+    const max = 3
+    
+    Math.floor((Math.random() * (max - min + 1)) + min);  
+        }
+}
+
+*/
+.labels {
+    background-color: #fff;
+    width: 100%;
+    text-align: left;
+    border: 3px solid #5b4a9a;
+    margin: 0.4rem 0;
+    padding: 0.6rem;
+    border-radius: 5px;
+    transition: 0.3s ease-out;
+    
+}
+.labels:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.001);
+}
+
+.labels input[type="radio"] {
+    
+}
+
+.botonesAvance {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .btn-link {
-    display: inline-block;
     padding: 10px 30px;
     border-radius: 100px;
     margin: 10px;
@@ -180,5 +228,5 @@ main {
         text-align: center;
     }
 
-    
+
 }

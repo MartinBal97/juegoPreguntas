@@ -1,84 +1,112 @@
 [
     {
         "pregunta": "¿Cuál es la capital de Argentina?",
-        "respuesta": "Buenos Aires",
-        "incorrecta1": "Madrid",
-        "incorrecta2": "Berlin",
-        "incorrecta3": "Paris",
-        "imagen":""
+        "respuestas": [
+            {
+                "respuesta": "Buenos Aires",
+                "incorrecta1": "Madrid",
+                "incorrecta2": "Berlin"               
+            }
+        ],
+        "imagen": ""
     },
     {
         "pregunta": "¿Cuál es la capital de Colombia?",
-        "respuesta": "Medellín",
-        "incorrecta1": "Caracas",
-        "incorrecta2": "Santiago",
-        "incorrecta3": "Brasilia",
-        "imagen":""
+        "respuestas": [
+            {
+                "respuesta": "Medellín",
+                "incorrecta1": "Caracas",
+                "incorrecta2": "Santiago"               
+            }
+        ],
+        "imagen": ""
     },
-
     {
         "pregunta": "¿Cuál es la capital de Italia?",
-        "respuesta": "Roma",
-        "incorrecta1": "Sidney",
-        "incorrecta2": "Shanghai",
-        "incorrecta3": "Lima",
-        "imagen":""
+        "respuestas": [
+            {
+                "respuesta": "Roma",
+                "incorrecta1": "Sidney",
+                "incorrecta2": "Shanghai"                
+            }
+        ],
+        "imagen": ""
     },
     {
         "pregunta": "¿Cuál es la capital de Estados Unidos?",
-        "respuesta": "Washington",
-        "incorrecta1": "Buenos Aires",
-        "incorrecta2": "Sidney",
-        "incorrecta3": "Londres",
-        "imagen":""
+        "respuestas": [
+            {
+                "respuesta": "Washington",
+                "incorrecta1": "Buenos Aires",             "incorrecta2": "Sidney"
+                
+            }
+        ],
+        "imagen": ""
     },
     {
         "pregunta": "¿Cuál es la capital de Inglaterra?",
-        "respuesta": "Londres",
-        "incorrecta1": "New York",
-        "incorrecta2": "Bruselas",
-        "incorrecta3": "Madrid",
-        "imagen":""
+        "respuestas": [
+            {
+                "respuesta": "Londres",
+                "incorrecta1": "New York",
+                "incorrecta2": "Bruselas"               
+            }
+        ],
+        "imagen": ""
     },
     {
         "pregunta": "¿Cuál es la capital de Chile?",
-        "respuesta": "Santiago",
-        "incorrecta1": "Montevideo",
-        "incorrecta2": "Medellín",
-        "incorrecta3": "Tokio",
-        "imagen":""
+        "respuestas": [
+            {
+                "respuesta": "Santiago",
+                "incorrecta1": "Montevideo",
+                "incorrecta2": "Medellín"               
+            }
+        ],
+        "imagen": ""
     },
     {
         "pregunta": "¿Cuál es la capital de Japon?",
-        "respuesta": "Tokio",
-        "incorrecta1": "Shanghai",
-        "incorrecta2": "Hiroshima",
-        "incorrecta3": "Wuhan",
-        "imagen":""
+        "respuestas": [
+            {
+                "respuesta": "Tokio",
+                "incorrecta1": "Shanghai",
+                "incorrecta2": "Hiroshima"               
+            }
+        ],
+        "imagen": ""
     },
     {
         "pregunta": "¿Cuál es la capital de Paises Bajos?",
-        "respuesta": "Amsterdam",
-        "incorrecta1": "Berlin",
-        "incorrecta2": "Lisboa",
-        "incorrecta3": "Zurich",
-        "imagen":""
+        "respuestas": [
+            {
+                "respuesta": "Amsterdam",
+                "incorrecta1": "Berlin",
+                "incorrecta2": "Lisboa"               
+            }
+        ],
+        "imagen": ""
     },
     {
         "pregunta": "¿Cuál es la capital de Suiza?",
-        "respuesta": "Zurich",
-        "incorrecta1": "Dublin",
-        "incorrecta2": "Quito",
-        "incorrecta3": "Amsterdam",
-        "imagen":""
+        "respuestas": [
+            {
+                "respuesta": "Zurich",
+                "incorrecta1": "Dublin",
+                "incorrecta2": "Quito"                
+            }
+        ],
+        "imagen": ""
     },
     {
         "pregunta": "¿Cuál es la capital de Brasil?",
-        "respuesta": "Brasilia",
-        "incorrecta1": "Sao Paulo",
-        "incorrecta2": "Montevideo",
-        "incorrecta3": "Santiago",
-        "imagen":""
+        "respuestas": [
+            {
+                "respuesta": "Brasilia",
+                "incorrecta1": "Sao Paulo",
+                "incorrecta2": "Montevideo"
+            }
+        ],
+        "imagen": ""
     }
-
 ]
