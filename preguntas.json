@@ -1,112 +1,82 @@
 [
     {
-        "pregunta": "¿Cuál es la capital de Argentina?",
+        "pregunta": "¿Cuánto tarda en llegar a nosotros la luz del Sol?",
         "respuestas": [
-            {
-                "respuesta": "Buenos Aires",
-                "incorrecta1": "Madrid",
-                "incorrecta2": "Berlin"               
-            }
-        ],
-        "imagen": ""
+            "8 minutos y 30 segundos.",
+            "5 minutos.",
+            "24 horas."
+        ]
     },
     {
-        "pregunta": "¿Cuál es la capital de Colombia?",
+        "pregunta": "¿Qué hay en un agujero negro? ",
         "respuestas": [
-            {
-                "respuesta": "Medellín",
-                "incorrecta1": "Caracas",
-                "incorrecta2": "Santiago"               
-            }
-        ],
-        "imagen": ""
+            "No lo sabemos, es una de las tantas cosas del universo que el ser humano no ha podido descifrar.",
+            "Son portales a otros universos.",
+            "La nada misma."
+        ]
     },
     {
-        "pregunta": "¿Cuál es la capital de Italia?",
+        "pregunta": "¿Cuantas galaxias hay en el universo observable?",
         "respuestas": [
-            {
-                "respuesta": "Roma",
-                "incorrecta1": "Sidney",
-                "incorrecta2": "Shanghai"                
-            }
-        ],
-        "imagen": ""
+            "Se estima alrededor de 100.000.000.000 (Cien mil millones)",
+            "Se estima alrededor de 5.000.000 (Cinco millones)",
+            "Se estima alrededor de 10.000.000 (Diez millones)"
+        ]
     },
     {
         "pregunta": "¿Cuál es la capital de Estados Unidos?",
         "respuestas": [
-            {
-                "respuesta": "Washington",
-                "incorrecta1": "Buenos Aires",             "incorrecta2": "Sidney"
-                
-            }
-        ],
-        "imagen": ""
+            "Washington",
+            "Buenos Aires",
+            "Sidney"
+        ]
     },
     {
         "pregunta": "¿Cuál es la capital de Inglaterra?",
         "respuestas": [
-            {
-                "respuesta": "Londres",
-                "incorrecta1": "New York",
-                "incorrecta2": "Bruselas"               
-            }
-        ],
-        "imagen": ""
+            "Londres",
+            "New York",
+            "Bruselas"
+        ]
     },
     {
         "pregunta": "¿Cuál es la capital de Chile?",
         "respuestas": [
-            {
-                "respuesta": "Santiago",
-                "incorrecta1": "Montevideo",
-                "incorrecta2": "Medellín"               
-            }
-        ],
-        "imagen": ""
+            "Santiago",
+            "Montevideo",
+            "Medellín"
+        ]
     },
     {
         "pregunta": "¿Cuál es la capital de Japon?",
         "respuestas": [
-            {
-                "respuesta": "Tokio",
-                "incorrecta1": "Shanghai",
-                "incorrecta2": "Hiroshima"               
-            }
-        ],
-        "imagen": ""
+            "Tokio",
+            "Shanghai",
+            "Hiroshima"
+        ]
     },
     {
         "pregunta": "¿Cuál es la capital de Paises Bajos?",
         "respuestas": [
-            {
-                "respuesta": "Amsterdam",
-                "incorrecta1": "Berlin",
-                "incorrecta2": "Lisboa"               
-            }
-        ],
-        "imagen": ""
+            "Amsterdam",
+            "Berlin",
+            "Lisboa"
+        ]
     },
     {
         "pregunta": "¿Cuál es la capital de Suiza?",
         "respuestas": [
-            {
-                "respuesta": "Zurich",
-                "incorrecta1": "Dublin",
-                "incorrecta2": "Quito"                
-            }
-        ],
-        "imagen": ""
+            "Zurich",
+            "Dublin",
+            "Quito"
+        ]
     },
     {
         "pregunta": "¿Cuál es la capital de Brasil?",
         "respuestas": [
-            {
-                "respuesta": "Brasilia",
-                "incorrecta1": "Sao Paulo",
-                "incorrecta2": "Montevideo"
-            }
-        ],
-        "imagen": ""
+            "Brasilia",
+            "Sao Paulo",
+            "Montevideo"
+        ]
     }
 ]

@@ -1,87 +1,87 @@
-(function () {
+/*(function () {
     'use strict';
-    document.addEventListener('DOMContentLoaded', function () {
-        /*
-        document.querySelector(".boton-empezar").onClick(() => {
-            document.getElementsByClassName(".contenedorPreguntas").removeClass();
-        })*/
-        const contenedorPreguntas = document.querySelector(".contenedorPreguntas");
+    document.addEventListener('DOMContentLoaded', function () {*/
 
-        function numeroAleatorio() {
-            const min = 1
-            const max = 3
-            var numeroRepetido = 0
-            numerosSalidos=[]
-            for (let i = 0; i < 4; i++) {
 
-                var aleatorio = Math.floor((Math.random() * (max - min + 1)) + min);  
+const contenedorPreguntas = document.querySelector(".contenedorPreguntas");
+const botonEmpezar = document.querySelector(".boton-empezar");
 
-                if (aleatorio == numeroRepetido) {
+let cont = 0
 
-                }
-                
-                numerosSalidos.push(aleatorio)
+botonEmpezar.addEventListener('click', function () {
+    contenedorPreguntas.removeChild(botonEmpezar);
+    cargarPreguntas();
+
+})
+
+
+
+/*var uno = 0;
+var dos = 0;
+var tres = 0;
+
+function crearNumeroAleatorio() { // FUNCION QUE RETORNA 3 NUMEROS ALEATORIOS SIN REPETIRSE
+    var n = 0;
+    var numero;
+
+    do {
+
+        do {
+            numero = Math.floor((Math.random() * 3) + 1);
+        } while (numero == 0)
+
+        if ((numero != uno) && (numero != dos) && (numero != tres)) {
+            n++;
+            if (n == 1) {
+                uno = numero;
             }
-            
-            
-            return aleatorio
+            if (n == 2) {
+                dos = numero;
+            }
+            if (n == 3) {
+                tres = numero;
+            }
         }
-
-        let cont = 0
-        function cargarPreguntas() {
-            fetch('preg.json')
-                .then(respuesta => respuesta.json()) //Se indica el formato en que vamos a querer la info
-                .then(preguntas => {   //Mostramos la info
-                    console.log(preguntas);
-                    preguntas.sort(() => { return Math.random() - 0.5 }).forEach(p => {
-
-                        cont++;
-                        
-                        const pregs = document.createElement('div');
-
-                        pregs.innerHTML += ` <div class= "preguntas">
-                                                <h3>${p.pregunta}</h3>
-                                                <div class= "contenedor-inputs">
-                                                    <label class="labels" style="order:${numeroAleatorio()};"> <input type= "radio" name="${cont}" value="correcta"> ${p.respuestas.respuesta}</label>
-                                                    <label class="labels" style="order:${numeroAleatorio()};"> <input type= "radio" name="${cont}" value="incorrecta"> ${p.respuestas.incorrecta1}</label>
-                                                    <label class="labels" style="order:${numeroAleatorio()};"> <input type= "radio" name="${cont}" value="incorrecta"> ${p.respuestas.incorrecta2}</label>
-                                                </div>
-                                            </div>`;
-
-                        /*    p.respuestas.sort(() => { return Math.ceil(Math.random()*4)});  */
-
-                        contenedorPreguntas.appendChild(pregs)
-
-                    });
+    } while (n < 3);
+}
 
 
-                })
+crearNumeroAleatorio();
+console.log(uno + " " + dos + " " + tres)*/
 
 
-        }
 
-        cargarPreguntas();
 
+function cargarPreguntas() {
+    
+    fetch('preguntas.json')
+        .then(respuesta => respuesta.json()) //Se indica el formato en que vamos a querer la info
+        .then(preguntas => {   //Mostramos la info
+            preguntas.sort(() => { return Math.random() - 0.5 }).forEach(p => {
+                p.respuestas.sort(() => { return Math.random() - 0.5 })
+                cont++;
+
+                const pregs = document.createElement('div');
+
+                pregs.innerHTML +=
+                    `<div class= "preguntas">
+                            <h3>${p.pregunta}</h3>
+                            <div class= "contenedor-inputs">
+                                <label class="labels" style=""> <input type= "radio" name="${cont}" value="correcta">   ${p.respuestas[0]}</label>
+                                <label class="labels" style=""> <input type= "radio" name="${cont}" value="incorrecta"> ${p.respuestas[1]}</label>
+                                <label class="labels" style=""> <input type= "radio" name="${cont}" value="incorrecta"> ${p.respuestas[2]}</label>
+                            </div>
+                        </div>`;
+                contenedorPreguntas.appendChild(pregs)
+            });
+        })
+}
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
     })
 
-})();
+})();*/
