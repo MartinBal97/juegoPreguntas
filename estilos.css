@@ -1,17 +1,19 @@
+:root {
+    --colorPrincipal: rgb(19, 18, 107) ;
+}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 img {
     width: 100%;
     height: 100%;
-    
 }
-
 body {
-    background-color: #2a2a2a;
+	background-image: url(img/fondo.jpg);
+    background-size:100%;
+    background-repeat:repeat;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -19,9 +21,8 @@ body {
     align-items: center;
     color: #f2f2f2;
 }
-
 .contenedor {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(33, 33, 44, 0.7);
     width: 90%;
     max-width: 1200px;
     margin: 40px auto;
@@ -29,16 +30,22 @@ body {
     border-radius: 10px;
     text-align: center;
 }
-
-
-
 .contenedor-texto {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+.preguntas {
+    margin: 1rem;
+}
+.preguntas:first-child{
+    text-align: left;
+}
+.preguntas p{
+    margin-left: 1.5rem;
+}
 /************************************************/
 /* From uiverse.io by @adamgiebl */
 .boton-empezar {
@@ -53,7 +60,6 @@ body {
     font-family: inherit;
     margin: 5rem;
 }
-
 .boton-empezar:before {
     content: '';
     position: absolute;
@@ -61,10 +67,9 @@ body {
     left: -5px;
     width: 100%;
     height: 10px;
-    background: #2a2a2a;
+    background: var(--colorPrincipal);
     transform: skewX(-41deg);
 }
-
 .boton-empezar:after {
     content: '';
     position: absolute;
@@ -72,81 +77,44 @@ body {
     left: -9px;
     width: 9px;
     height: 100%;
-    background: #2a2a2a;
+    background: var(--colorPrincipal);
     transform: skewY(-49deg);
 }
-
 .boton-empezar span {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #2a2a2a;
+    background-color: var(--colorPrincipal);
     color: #fff;
     font-size: 25px;
     cursor: pointer;
     transition: 0.8s ease-out;
 }
-
 .boton-empezar:hover span {
     z-index: 1000;
     transition: .3s;
     color: black;
     background-color: #f2f2f2;
 }
+.boton-empezar:hover span:nth-child(5) {transform: translate(40px, -40px);opacity: 1;}
+.boton-empezar:hover span:nth-child(4) {transform: translate(30px, -30px);opacity: .8;}
+.boton-empezar:hover span:nth-child(3) {transform: translate(20px, -20px);opacity: .6;}
+.boton-empezar:hover span:nth-child(2) {transform: translate(10px, -10px);opacity: .4;}
+.boton-empezar:hover span:nth-child(1) {transform: translate(0px, 0px);opacity: .2;}
 
-.boton-empezar:hover span:nth-child(5) {
-    transform: translate(40px, -40px);
-    opacity: 1;
-}
-
-.boton-empezar:hover span:nth-child(4) {
-    transform: translate(30px, -30px);
-    opacity: .8;
-}
-
-.boton-empezar:hover span:nth-child(3) {
-    transform: translate(20px, -20px);
-    opacity: .6;
-}
-
-.boton-empezar:hover span:nth-child(2) {
-    transform: translate(10px, -10px);
-    opacity: .4;
-}
-
-.boton-empezar:hover span:nth-child(1) {
-    transform: translate(0px, 0px);
-    opacity: .2;
-}
-
-.boton-empezar:active span:nth-child(5) {
-    transform: translate(20px, -20px);
-    opacity: 1;
-}
-
-.boton-empezar:active span:nth-child(4) {
-    transform: translate(15px, -15px);
-}
-
-.boton-empezar:active span:nth-child(3) {
-    transform: translate(10px, -10px);
-}
-
-.boton-empezar:active span:nth-child(2) {
-    transform: translate(5px, -5px);
-}
-
-.boton-empezar:active span:nth-child(1) {
-    transform: translate(0px, 0px);
-}
-
-.boton-empezar:nth-child(1):hover span {
-    background: #f2f2f2;
-}
-
+.boton-empezar:active span:nth-child(5) {transform: translate(20px, -20px); opacity: 1;}
+.boton-empezar:active span:nth-child(4) {transform: translate(15px, -15px);}
+.boton-empezar:active span:nth-child(3) {transform: translate(10px, -10px);}
+.boton-empezar:active span:nth-child(2) {  transform: translate(5px, -5px);}
+.boton-empezar:active span:nth-child(1) {  transform: translate(0px, 0px);}
+.boton-empezar:nth-child(1):hover span {   background: white;}
 /*************************************************/
+.preguntaYcantidad {
+    display: flex;
+    justify-content: space-between;
+}
 
 .contenedor-texto .titulo {
     font-size: 2rem;
@@ -164,29 +132,11 @@ body {
     flex-direction: column;
     
 }
-/*
-let myArray = ['1','2','3']
-    let i,j,k;
-    for (i = myArray.length; i; i--) {
-        j = Math.floor(Math.random() * i);
-        k = myArray[i - 1];
-        myArray[i - 1] = myArray[j];
-        myArray[j] = k;
 
-        function numeroAleatorio() {
-    const min = 1
-    const max = 3
-    
-    Math.floor((Math.random() * (max - min + 1)) + min);  
-        }
-}
-
-*/
 .labels {
-    background-color: rgba(255, 255, 255, 0.1);
     width: 100%;
     text-align: left;
-    border: 3px solid #5b4a9a; /*ARREGLAR*/
+    border: 3px solid var(--colorPrincipal); /*ARREGLAR*/
     margin: 0.4rem 0;
     padding: 0.6rem;
     border-radius: 5px;
@@ -199,7 +149,7 @@ let myArray = ['1','2','3']
 }
 
 .labels input[type="radio"] {
-    background-color: #5b4a9a; /*ARREGLAR*/
+    background-color: var(--colorPrincipal); /*ARREGLAR*/
 }
 
 .botonesAvance {
@@ -208,8 +158,11 @@ let myArray = ['1','2','3']
 }
 
 .btn-link {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
     padding: 10px 30px;
     border-radius: 100px;
+    border: none;
     margin: 10px;
     text-decoration: none;
     background: #f2f2f2;
@@ -218,8 +171,9 @@ let myArray = ['1','2','3']
 
 .btn-link:hover,
 .btn-link.activo {
+    cursor: pointer;
     color: #fff;
-    background: #5b4a9a;
+    background: var(--colorPrincipal);
 }
 
 @media screen and (max-width: 915px) {
@@ -227,6 +181,4 @@ let myArray = ['1','2','3']
         flex-direction: column;
         text-align: center;
     }
-
-
 }

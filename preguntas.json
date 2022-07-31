@@ -8,35 +8,35 @@
         ]
     },
     {
-        "pregunta": "¿Qué hay en un agujero negro? ",
+        "pregunta": "¿Qué hay dentro de un agujero negro? ",
         "respuestas": [
             "No lo sabemos, es una de las tantas cosas del universo que el ser humano no ha podido descifrar.",
             "Son portales a otros universos.",
             "La nada misma."
-        ]
+        ]    
     },
     {
         "pregunta": "¿Cuantas galaxias hay en el universo observable?",
         "respuestas": [
-            "Se estima alrededor de 100.000.000.000 (Cien mil millones)",
-            "Se estima alrededor de 5.000.000 (Cinco millones)",
-            "Se estima alrededor de 10.000.000 (Diez millones)"
+            "Se estima alrededor de 100.000.000.000 (Cien mil millones).",
+            "Se estima alrededor de 5.000.000 (Cinco millones).",
+            "Se estima alrededor de 10.000.000 (Diez millones)."
         ]
     },
     {
-        "pregunta": "¿Cuál es la capital de Estados Unidos?",
+        "pregunta": "¿Cuantas estrellas hay en nuestra galaxia (Vía Láctea)?",
         "respuestas": [
-            "Washington",
-            "Buenos Aires",
-            "Sidney"
+            "Entre 100.000 y 400.000 millones de estrellas",
+            "Entre 0 y 100.000 millones de estrellas",
+            "Entre 400.000 y 700.000 millones de estrellas"
         ]
     },
     {
-        "pregunta": "¿Cuál es la capital de Inglaterra?",
+        "pregunta": "¿Por qué se dice que cuando miramos una estrella estamos mirando su pasado?",
         "respuestas": [
-            "Londres",
-            "New York",
-            "Bruselas"
+            "Por lo que demora en llegar su luz debido a las grandes distancias.",
+            "Esto no es correcto, siempre vemos su presente.",
+            "Por las grandes distancias que alteran la visión por las particulas entre donde se observa hasta la estrella."
         ]
     },
     {
